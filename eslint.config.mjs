@@ -9,11 +9,8 @@ export default defineConfig([
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   {
-    plugins: [
-      "tailwindcss",
-    ],
+    plugins: [],
     extends: [
-      "plugin:tailwindcss/recommended",
       "plugin:prettier/recommended",
     ],
     rules: {
