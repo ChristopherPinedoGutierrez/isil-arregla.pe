@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Arregla.pe – Landing Page (Proyecto educativo)
 
-## Getting Started
+**Arregla.pe** es un proyecto desarrollado como parte del curso de **Modelos de Negocio y Startups**, cuyo objetivo es presentar el **Producto Mínimo Viable (PMV)** de una idea de negocio basada en un **marketplace digital** para conectar a personas que necesitan servicios técnicos del hogar (como gasfitería, electricidad, carpintería, etc.) con técnicos independientes confiables y verificados.
 
-First, run the development server:
+## 🚀 Descripción general
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este repositorio contiene el código fuente de la **landing page** de Arregla.pe, diseñada con fines educativos para:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Presentar la propuesta de valor del negocio.
+- Validar el interés del público objetivo mediante formularios.
+- Simular el funcionamiento inicial del producto.
+- Servir como punto de partida para futuros desarrollos del proyecto.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+La landing page incluye:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Un **modo interactivo** para dos perfiles: “Usuario” y “Técnico”.
+- Información sobre cómo funciona la plataforma según el perfil seleccionado.
+- Testimonios, preguntas frecuentes y estructura de precios diferenciada.
+- Un formulario de contacto para registrar interesados durante la fase de validación.
 
-## Learn More
+## 🛠️ Tecnologías utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- [React](https://reactjs.org/) – Librería para la construcción de interfaces
+- [Tailwind CSS](https://tailwindcss.com/) – Utilidad de estilos CSS rápida y responsiva
+- [Vite](https://vitejs.dev/) – Bundler para desarrollo moderno con React
+- [Formspree / EmailJS / Google Forms] – Para gestión de formularios de contacto (dependiendo de la implementación)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> El sitio está optimizado para dispositivos móviles y pensado para su despliegue temporal gratuito mediante plataformas como Vercel o Netlify.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 Estado del proyecto
 
-## Deploy on Vercel
+Este es un **proyecto académico en etapa de validación**, y su finalidad es demostrar la aplicabilidad del enfoque Lean Startup, así como de técnicas de diseño centradas en el usuario. A futuro se espera desarrollar un prototipo funcional de la plataforma completa.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contacto y derechos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este repositorio ha sido creado con fines educativos y no representa una empresa activa. Para más información, sugerencias o uso académico del contenido, puedes contactarme por GitHub o correo electrónico.
+
+---
+
