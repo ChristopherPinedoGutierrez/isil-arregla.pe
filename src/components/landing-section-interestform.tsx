@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 import confetti from "canvas-confetti";
+import { track } from "@vercel/analytics";
 
 export function LandingSectionInterestForm() {
   // Reemplaza por tu endpoint de Formspree
@@ -64,6 +65,7 @@ export function LandingSectionInterestForm() {
     if (!validate()) {
       return;
     }
+    track("form_submit");
     // Enviar datos a Formspree usando fetch
     const formData = new FormData();
     formData.append("name", form.name);

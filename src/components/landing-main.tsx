@@ -14,13 +14,15 @@ import { LandingSectionTestimonials } from "./landing-section-testimonials"
 import { LandingSectionFAQ } from "./landing-section-faq"
 import { LandingSectionFooter } from "./landing-section-footer"
 import { LandingNavbar } from "@/components/landing-navbar"
+import { track } from '@vercel/analytics';
 
 export default function LandingMain() {
   const [isUser, setIsUser] = useState(true)
   const currentContent = isUser ? userContent : technicianContent
 
   const handleScrollToContact = (e?: React.MouseEvent) => {
-    if (e) e.preventDefault()
+    if (e) e.preventDefault();
+    track('cta_navbar_click');
     const el = document.getElementById("contacto")
     if (el) el.scrollIntoView({ behavior: "smooth" })
   }
@@ -35,7 +37,10 @@ export default function LandingMain() {
         cta={currentContent.hero.cta}
         isUser={isUser}
         ButtonComponent={(props: any) => (
-          <Button {...props} onClick={handleScrollToContact}>
+          <Button {...props} onClick={(e: React.MouseEvent) => {
+            track('cta_hero_click');
+            handleScrollToContact(e);
+          }}>
             {currentContent.hero.cta}
           </Button>
         )}
