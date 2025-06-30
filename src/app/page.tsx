@@ -1,5 +1,5 @@
-import ArreglaPeLanding from "../components/arreglape-landing"
+import LandingMain from "../components/landing-main"
 
 export default function Page() {
-  return <ArreglaPeLanding />
+  return <LandingMain />
 }
